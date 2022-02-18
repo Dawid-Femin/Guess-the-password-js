@@ -2,3 +2,22 @@
     margin: 0;
     padding: 0;
 }
+
+#hangman {
+    margin: 40px auto 0 auto;
+}
+
+#letters {
+    text-align: center;
+}
+
+button {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+}
+
+#category {
+    text-align: center;
+    font-size: 32px;
+}
