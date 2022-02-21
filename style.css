@@ -5,8 +5,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #ff9000, #f8ac00, #e9c900, #d2e400, #b0ff00);
+}
+
 #hangman {
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 #letters {
@@ -14,9 +21,10 @@
 }
 
 button {
-    width: 45px;
-    height: 45px;
+    width: 90px;
+    height: 90px;
     margin: 10px;
+    font-size: 32px;
 }
 
 #category {
@@ -26,23 +34,21 @@ button {
 }
 
 #word {
-    margin: auto;
-    width: 60vw;
-    height: 8vh;
+    margin: 50px auto 30px auto;
+    width: 80vw;
     border: 2px solid black;
     text-align: center;
-    font-size: 42px;
+    font-size: 40px;
     letter-spacing: 5px;
-    padding-top: 15px;
+    padding: 20px 0 20px 0;
+    background-color: #fff;
 }
 
 #output {
-    margin: auto 0 auto 0;
+    text-align: center;
 }
 
 .step {
-    width: 200px;
-    height: 200px;
     display: inline-block;
     opacity: 1;
 }
@@ -50,4 +56,35 @@ button {
 .step img {
     width: 150px;
     height: 150px;
+    padding: 0 40px;
 }
+
+@media screen and (max-width: 919px) {
+    
+    .step img {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    #word {
+        width: 90vw;
+        font-size: 30px;
+        letter-spacing: 5px;
+        padding: 45px 0 45px 0;
+    }
+    #letters {
+        text-align: center;
+    }
+    
+    button {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+        font-size: 28px;
+    }
+    #category {
+        text-align: center;
+        font-size: 32px;
+        margin: 15px 0 15px 0;
+    }
+  }

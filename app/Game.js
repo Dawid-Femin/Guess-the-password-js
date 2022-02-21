@@ -73,7 +73,7 @@ class Game {
     }
 
   wining() {
-    this.wordWrapper.innerHTML = 'GRATULACJE! WYGRYWASZ! KONIEC GRY!';
+    this.wordWrapper.innerHTML = 'WYGRYWASZ! KONIEC GRY!';
     this.lettersWrapper.innerHTML = '';
   }
 
